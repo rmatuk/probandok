@@ -1,0 +1,44 @@
+
+Una empresa de colectivos tiene organizada su información en los siguientes
+vectores:
+INTERNOS (vector de registros): datos de las líneas internas de la empresa
+de colectivo
+RECORRIDOS (vector de enteros): datos de la longitud en km de los recorridos
+
+Los registros del vector INTERNOS tienen la siguiente forma:
+Número de interno: Integer (1001 al 3000, consecutivos)
+Km recorridos: integer
+Dinero recaudado: float
+
+El vector de recorridos (vector de enteros de longitud 10)  contiene la
+longitud en Kilómetros de cada uno de los 10 recorridos. El índice del vector
+indica el código del recorrido. La longitud en km de los recorridos es
+[12,9,13,10,8,7,9,22,11,5]
+
+Se cuenta además con un archivos de texto MENSUAL.TXT con la siguiente información:
+Día: Integer (1 al 30)
+Número de interno: integer (1001 al 3000)
+Código recorrido: integer (del 0 al 9)
+Pasajeros transportados: integer
+Recaudación: float
+El archivo MENSUAL.TXT está agrupado por Número de Interno.
+
+Se pide:
+
+1) Crear las estructuras de datos INTERNOS y RECORRIDOS.
+Inicializar el vector RECORRIDOS con los datos de las longitudes en kilómetros
+de los recorridos.
+Inicializar el vector INTERNOS con los registros correspondientes, donde los
+números de interno deben tener numeración consecutiva del 1001 al 3000, y los
+kilómetros recorridos y el dinero recaudado deben estar inicializados en forma
+random del 10 al 100.
+
+2) Procesar el archivo MENSUAL.TXT, utilizando la técnica de corte de control para:
+a) actualizar la recaudación y los kilómetros recorridos del vector INTERNOS
+b) Informar por pantalla el recorrido que más recaudó ese mes.
+
+Restricción: El archivo MENSUAL.TXT puede leerse por completo SOLAMENTE UNA VEZ
+en todo el programa durante el corte de Control.
+
+Es un error descalificante actualizar cualquiera de los vectores de registros 
+por cada lectura del archivo de texto.
