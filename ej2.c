@@ -1,3 +1,23 @@
+/*
+Una empresa de repuestos tiene su sistema de stock organizado de la siguiente forma:
+En un archivo secuencial “MOVIMIENTOS.TXT” agrupado por código de repuesto, todos
+los movimientos del año, con la siguiente estructura.
+MOVIMIENTOS.TXT
+CODI_REP_MOVI Codigo del repuesto (entero) (Agrupado)
+DIA_MOVI Dia del movimiento (entero)
+MES_MOVI Mes del movimiento (entero)
+ANI_MOVI Año del movimiento (entero)
+TIPO_MOVI Tipo de movimiento (entero. 1: Compra 2: Venta)
+CANTI_MOVI Cantidad que se compraron o vendieron (entero)
+Considerar que el archivo ya está creado y almacenado en disco con todos los datos.
+Realizar un programa en C completo y modularizado que:
+1) Informe por pantalla un listado con el stock final de cada Repuesto (Comprados -
+Vendidos).
+2) Determine en que mes se vendio la mayor cantidad de repuestos.
+3) Informe por pantalla cual es el repuesto con mayor stock.
+NOTA: El archivo MOVIMIENTOS.TXT se debe leer por completo solo una vez en todo el
+programa.
+*/
 #include <stdio.h>
 #define MESES 12
 //Muestra x pantalla los productos y los stocks por pantalla
